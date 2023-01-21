@@ -1,7 +1,14 @@
+/* CSS custom variables */
+:root {
+  --clr-dark: 230, 35%, 7%;
+  --clr-light-blue: 231, 77%, 90%;
+  --clr-white: 0, 0%, 100%;
+}
+
 /* CSS reset */
 *,
 *::after,
-::before {
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -66,4 +73,30 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /*added line*/
   border: 0;
+}
+
+/* colors */
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-white {
+  color: hsl(var(--clr-white));
+}
+.text-accent {
+  color: hsl(var(--clr-light-blue));
+}
+
+.bg-dark {
+  background: hsl(var(--clr-dark));
+}
+.bg-white {
+  background: hsl(var(--clr-white));
+}
+.bg-accent {
+  background: hsl(var(--clr-light-blue));
+}
+
+.bg-accent {
+  background: hsla(0, 0%, 0%, 20%);
 }
